@@ -1,0 +1,294 @@
+.studio-intro {
+    padding: 5rem 0;
+    height: calc(100vh - 74px);
+
+    .container {
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        h1 {
+            font-family: var(--text);
+            font-size:  32px;
+            line-height: 42px;
+        }
+
+        .card-container {
+            right: 0;
+            width: 50%;
+        }
+        
+        .d-flex a {
+            margin: 2rem 2rem 0 0;
+        }
+    }   
+}
+
+.studio-service {
+    padding-bottom: 9rem;
+
+    h2 {
+        margin-bottom: 4.5rem;
+    }
+
+    .list-service {
+        width: 100%;
+        border-top: none;
+
+        .accordion-item {
+            padding: 18px 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: none;
+
+            &:nth-child(n+2) {
+                border-top: 1px solid #323232;
+            }
+
+            .accordion-header {
+                width: 100%;
+
+                .accordion-button {
+
+                    &:before, &::after { display: none; }
+
+                    &[aria-expanded="true"] .link a {
+                        color: var(--secondary);
+
+                        svg  {
+                            transform: rotate(90deg) translate(-1px, 0px);
+                            
+                            path {
+                                stroke: var(--secondary);
+                            }
+                        }
+                    }
+
+                }
+
+                .descr {
+                    flex: 1;
+                    padding: 0 5rem 0 0;
+    
+                    h3 {
+                        font-size: 30px;
+                        line-height: 34px;
+                        font-weight: 700;
+                        margin: 0;
+    
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            color: var(--secondary);
+                        }
+                    }
+    
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        margin: 0 0 7px;
+                        
+                        li {
+                            position: relative;
+                            padding: 0 2rem 0 0;
+                            text-transform: uppercase;
+                            font-size: 14px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+    
+                .link {
+                    flex: 0 0 8rem;
+                    text-align: right;
+                    font-family: var(--title);
+    
+                    a {
+                        color: var(--white);
+                        transition: 0.5s ease 0s;
+                        font-size: 13px;
+                        font-weight: 600;
+    
+                        svg {
+                            transform: translate(0, 0);
+                            transition: .5s ease 0s;
+                        }
+        
+                        &:hover {
+                            color: var(--secondary);
+    
+                            svg {
+                                transform: translate(10px, 0);
+    
+                                path {
+                                    stroke: var(--secondary);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+
+    a.btn {
+        margin: 5rem auto 0;
+    }
+
+}
+
+.studio-approche .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    max-width: 95%;
+
+    h2 {
+        margin: 0 0 4rem;
+    }
+
+    .btn-container {
+        justify-content: flex-end;
+        padding-top: 20px;
+    }
+
+    ul.col-12 {
+        margin: 3.5rem -5rem 0;
+
+        li {
+            flex: 0 0 33.33%;
+            max-width: 33.33%;
+            padding: 0 5rem 5rem;
+            align-self: stretch;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 5%;
+                width: 2px;
+                height: 65%;
+                background-color: var(--white);
+            }
+
+            &:nth-child(3n)::after {
+                display: none;
+            }
+
+            h4 {
+                font-size: 16px;
+                margin: 1rem 0 .75rem;
+            }
+    
+            p {
+                font-size: 13px;       
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 1260px) {
+
+    .studio-approche .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        ul.col-12 li {
+            padding: 0 1.5rem 5rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .studio-intro {
+        height: auto!important;
+        padding-bottom: 0;
+
+        .container .card-container {
+            position: relative!important;
+            width: 100%;
+            transform: translate(7.5%, 0);
+        }
+
+    }
+
+    .studio-approche .container ul.col-12 li {
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        &:nth-child(3n)::after {
+            display: block;
+        }
+
+        &:nth-child(2n)::after {
+            display: none;
+        }
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .studio-intro .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        .card-container {
+            transform: translate(10px, 0);
+        }
+    }
+
+    .studio-service .list-service .accordion-item {
+        .accordion-header .accordion-button {
+            flex-wrap: wrap;
+            padding: 16px 0;
+    
+            .descr {
+                padding: 0;
+                flex: 0 0 100%;
+    
+                h3 {
+                    font-size: 21px;
+                    line-height: 31px;
+                }
+
+                ul li {
+                    padding: 0 1rem 0 0;
+                }
+            }
+    
+            .link {
+                text-align: left!important;
+                margin: .5rem 0 0;
+            }
+        }
+
+        .accordion-body {
+            padding:  0;
+        }
+    }
+
+    .studio-approche .container ul.col-12 li {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        &:after {
+            width: 100%;
+            height: 1px;
+            bottom: 3rem;
+            top: inherit;
+        }
+
+        &:nth-child(2n)::after {
+            display: block;
+        }
+    }
+
+}

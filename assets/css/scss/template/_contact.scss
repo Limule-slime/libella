@@ -1,0 +1,60 @@
+.contact-form {
+
+    h1 {
+        margin: 0 0 5rem
+    }
+
+    form li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 0 2rem;
+
+        input {
+            flex: 0 0 45%;
+        }
+
+        textarea {
+            width: 100%;
+        }
+
+        &.checkbox {
+
+            input {
+                flex: 0 0 2rem;
+                margin: 0 1rem 0 0;
+                transform: translate(0, 5px);
+            }
+
+            label {
+                flex: 1;
+            }
+
+        }
+
+        &:last-child {
+            input {
+                flex: 0 0 auto;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-form form li {
+        flex-wrap: wrap;
+
+        input {
+            flex: 0 0 100%;
+
+            &:first-child {
+                margin: 0 0 2rem;
+            }
+        }
+    }
+
+}
