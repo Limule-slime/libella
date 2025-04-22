@@ -1,8 +1,16 @@
+@import "scss/vendor/_bootstrap";
+
 /* BASE */
 @import "scss/base/_normalize";
 @import "scss/base/_default";
 @import "scss/base/_font";
+@import "scss/base/_skeleton";
 @import "scss/base/_variable";
+@import "scss/base/_element";
 
 /* VENDOR */
-@import "scss/vendor/_bootstrap";
+@import "scss/vendor/_owl.carousel.scss";
+@import "scss/vendor/_animate.scss";
+
+/* TEMPLATE */
+@import "scss/template/_home";

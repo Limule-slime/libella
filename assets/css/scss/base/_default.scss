@@ -291,17 +291,18 @@ textarea {
 }
 
 body {
-  background-color: var(--black);
   font-family: var(--font);
-  color: var(--white);
+  color: var(--black);
   font-size: 16px;
+  font-weight: 400;
   font-weight: normal;
-  line-height: 26px;
+  line-height: 22px;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: var(--title);
+  font-weight: 700;
 }
 
 h1, .h1 {
@@ -309,7 +310,7 @@ h1, .h1 {
   line-height: 82px;
 }
 h2, .h2 {
-  font-size: 52px;
+  font-size: 50px;
 }
 h3, .h3 {
   font-size: 32px;
@@ -350,8 +351,7 @@ a,
 a:hover,
 a:active,
 a:focus {
-  text-decoration: none;  
-  color: var(--white);
+  text-decoration: none;
   transition: .5s ease 0s;
 }
 
