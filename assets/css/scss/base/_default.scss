@@ -400,6 +400,12 @@ textarea:focus-visible {
   line-height: 32px;
 }
 
+.no-br-mobile br {
+  @media screen and (max-width: 767px) {
+    display: none;    
+  }
+}
+
 .color-black { color: var(--black) !important; }
 .color-white { color: var(--white) !important; }
 .color-primary { color: var(--primary) !important; }
