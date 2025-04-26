@@ -1,0 +1,101 @@
+.foreign-rights {
+
+    .container {        
+        width: 1184px;
+    }
+
+    header {
+        box-shadow: 0px 6px 34px 0px rgba(205, 202, 202, 0.12);
+        margin-bottom: 3rem;
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: .5rem;             
+        }
+
+        .toggle-nav.active {
+            top: 0;
+        }
+    }    
+
+    .main-img .container {
+        padding: 0 24px;
+        margin-bottom: 2rem;
+
+        .col-12 {
+            background: url(/assets/img/foreign.jpg) no-repeat center center;
+            background-size: cover;
+            padding: 0 1.5rem;
+            min-height: 67vh;
+    
+            h1 {
+                font-size: 32px;
+                color: var(--primary);
+                padding: 24px;
+                background: rgba(255, 255, 255, 0.75);
+
+                @media screen and (max-width: 767px) {
+                    font-size: 28px;     
+                    padding: 16px;               
+                }
+            }
+        }
+    }
+
+    .foreign-catalog {
+
+        h2 {
+            font-size: 32px;
+
+            @media screen and (max-width: 767px) {
+                font-size: 28px;                     
+            }
+        }
+
+        li {
+            padding: 24px;
+            border-radius: 4px;
+            background: #FFF;
+            box-shadow: 0px 14px 24px 0px rgba(126, 126, 126, 0.06);
+            flex: 0 0 60%;
+
+            @media screen and (max-width: 767px) {
+                flex: 0 0 100%;
+                margin-bottom: 2rem;   
+                flex-direction: column; 
+                padding: 24px 12px;            
+            }
+
+            h3 {
+                font-size: 23px;
+                margin: 0;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 21px;
+                    
+                }
+            }
+
+            p {
+                font-family: var(--title);
+                color: #C3C3C3;
+                font-weight: 500;
+
+                @media screen and (max-width: 767px) {
+                    text-align: center;                    
+                }
+            }
+
+            a {
+                font-family: var(--title);
+                font-weight: 500;
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    footer .container {
+        width: 1342px;
+    }
+
+}

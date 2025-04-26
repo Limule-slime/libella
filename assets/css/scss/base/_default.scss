@@ -321,19 +321,15 @@ h2, .h2 {
 }
 h3, .h3 {
   font-size: 32px;
-  line-height: 42px;
 }
 h4, .h4 {
   font-size: 24px;
-  line-height: 34px;
 }
 h5, .h5 {
   font-size: 21px;
-  line-height: 31px;
 }
 h6, .h6 {
   font-size: 16px;
-  line-height: 26px;
 }
 
 ul, ol {
@@ -349,6 +345,10 @@ li {
 p {
   margin-bottom: 1.5rem;
   word-spacing: 2px;
+
+  @media screen and (max-width: 767px) {
+    text-align: justify;    
+  }
 
   a {
     color: var(--secondary);
