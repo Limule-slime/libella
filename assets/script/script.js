@@ -1,4 +1,23 @@
+function navMobile() {
+    
+    $('.toggle-nav').on('click', function() {
+        $('.toggle-nav').toggleClass('active');
+        $('.mobile-nav').toggleClass('open');
+        return false;
+    })
+
+}
+
 jQuery(document).ready(function($) {
+
+    // Open nav mobile
+    navMobile();
+
+    // Animoate on scroll
+    AOS.init({
+        duration: 650,
+        once: true
+    });
 
     $('.owl-carousel').owlCarousel({
         loop:true,

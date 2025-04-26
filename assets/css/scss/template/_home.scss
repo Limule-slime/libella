@@ -1,8 +1,76 @@
 .list-maison {
+    padding: 1.5rem 0 4rem;
 
-    ul li {
-        flex: 0 0 30%;
-        box-shadow: 0 14px 24px 0 rgba(126, 126, 126, 0.06);
+    ul {
+        margin-top: 3rem;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 0;                
+        }
+
+        li {
+            flex: 0 0 30%;
+            box-shadow: 0 14px 24px 0 rgba(126, 126, 126, 0.06);
+            margin: 0 0 30px;
+            padding: 34px 24px 24px;
+
+            @media screen and (max-width: 767px) {
+                flex: 0 0 45%;                
+            }
+
+            @media screen and (max-width: 640px) {
+                flex: 0 0 100%;                
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 22px;
+            }
+    
+            a:last-child {
+                color: var(--secondary);
+                font-family: var(--title);
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                
+                &:after {
+                    content: url(/assets/img/libella-embleme.png);
+                    margin-left: 10px;
+                    width: 21px;
+                    height: 21px;
+                    display: block;
+                    transform: scale(.9);
+                    transition: .5s ease 0s;
+                }
+
+                &:hover,
+                &:active,
+                &:focus{
+                    transform: scale(1);
+                }
+            }
+        }
     }
 
+}
+
+.home-foreign {
+    margin: 10rem auto;
+
+    .container {
+        box-shadow: 0 14px 24px 0 rgba(126,126,126,.06);
+        padding: 34px 32px;
+
+        .col-md-8 {
+            padding: 0 7% 0 4%;
+
+            a {
+                font-family: var(--title);
+                font-weight: 500;
+                letter-spacing: .5px;
+                text-decoration: underline;
+            }
+        }
+    }
 }
