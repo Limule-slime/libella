@@ -44,9 +44,9 @@
                     transition: .5s ease 0s;
                 }
 
-                &:hover,
-                &:active,
-                &:focus{
+                &:hover:after ,
+                &:active:after ,
+                &:focus:after {
                     transform: scale(1);
                 }
             }
@@ -69,7 +69,6 @@
                 font-family: var(--title);
                 font-weight: 500;
                 letter-spacing: .5px;
-                text-decoration: underline;
             }
         }
     }
