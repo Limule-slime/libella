@@ -298,6 +298,10 @@ body {
   font-weight: normal;
   line-height: 1.35;
   background-color: var(--white);
+
+  @media screen and (max-width: 767px) {
+    padding-top: 75px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -352,6 +356,15 @@ p {
 
   a {
     color: var(--secondary);
+  }
+}
+
+strong,
+b {
+  font-weight: 600;
+
+  a {
+    font-weight: 600;
   }
 }
 
@@ -489,6 +502,14 @@ p, a {
   font-weight: 600;
   margin: 1.5rem 0;
   letter-spacing: 0.5px;
+}
+
+.mobile-only {
+
+  @media screen and (min-width: 768px) {
+    display: none!important;    
+  }
+
 }
 
 @media screen and ( max-width: 991px ) {

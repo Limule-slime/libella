@@ -55,8 +55,25 @@
 
 }
 
+.home-about {
+
+    p {
+        font-size: 16px;
+        text-align: justify;
+
+        &.intro {
+            font-size: 22px;
+        }
+    }
+
+}
+
 .home-foreign {
     margin: 10rem auto 7.5rem;
+
+    @media screen and (max-width: 767px) {
+        margin: 4rem auto 3rem;
+    }
 
     .container {
         box-shadow: 0 14px 24px 0 rgba(126,126,126,.06);

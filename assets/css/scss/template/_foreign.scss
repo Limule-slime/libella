@@ -22,10 +22,10 @@
         margin-bottom: 2rem;
 
         .col-12 {
-            background: url(/assets/img/foreign.jpg) no-repeat center center;
+            background: url(/assets/img/foreign-right.png) no-repeat center center;
             background-size: cover;
             padding: 0 1.5rem;
-            min-height: 67vh;
+            min-height: 57vh;
     
             h1 {
                 font-size: 32px;
@@ -39,6 +39,10 @@
                 }
             }
         }
+    }
+
+    .foreign-about p {
+        text-align: justify
     }
 
     .foreign-catalog {

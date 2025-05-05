@@ -45,7 +45,9 @@ jQuery(document).ready(function($) {
     navMobile();
 
     // Sticky header
-    stickyHeader();
+    if ( $(window).width() > 768 ) {        
+        stickyHeader();
+    }
 
     // Scroll to top
     scrollTop();
