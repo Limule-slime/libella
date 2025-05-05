@@ -26,6 +26,12 @@
             background-size: cover;
             padding: 0 1.5rem;
             min-height: 57vh;
+
+            @media screen and (max-width: 767px) {
+                background: url(/assets/img/foreign-right-mobile.jpg) no-repeat center center;
+                background-size: cover;
+                min-height: 432px;      
+            }
     
             h1 {
                 font-size: 32px;
@@ -100,6 +106,19 @@
 
     footer .container {
         width: 1342px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .foreign-catalog .col-md-7 {
+            padding: 25px 12px 
+        }        
+    }
+
+    @media screen and (max-width: 640px) {
+        .foreign-catalog .col-md-7 {
+            align-items: center !important;
+        }        
+        
     }
 
 }

@@ -42,20 +42,30 @@ header {
         background-color: var(--white);        
     }
 
-    .top-header ul {
-        a {
-            font-family: var(--title);
-            color: var(--primary);
-            font-size: 18px;
-            font-weight: 600;
-            margin: 0 0 0 41px;
-            letter-spacing: 0.5px;
-            transition: .5s ease 0s;
+    .top-header {
 
-            &:hover,
-            &:active,
-            &:focus {
-                color: var(--secondary);
+        .logo img {
+            @media screen and (max-width: 640px) {
+                width: 157px;
+                max-width: 100%;                
+            }
+        }
+
+        ul {
+            a {
+                font-family: var(--title);
+                color: var(--primary);
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0 0 0 41px;
+                letter-spacing: 0.5px;
+                transition: .5s ease 0s;
+    
+                &:hover,
+                &:active,
+                &:focus {
+                    color: var(--secondary);
+                }
             }
         }
     }
@@ -196,7 +206,8 @@ footer {
 
             @media screen and (max-width: 767px) {
                 width: 100%;
-                padding: 2rem 0 0 0;
+                padding: 0;
+                margin-top: 34px;
             }
 
             li {
@@ -263,7 +274,7 @@ footer {
         .col-md-4 {
 
             @media screen and (max-width: 767px) {
-                margin: 3.5rem 0 1.5rem;              
+                margin: 34px 0;              
             }
         }
     }
