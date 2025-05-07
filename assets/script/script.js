@@ -12,11 +12,20 @@ function stickyHeader() {
 
     $(window).on('scroll', function(){
 
-        if ( $(window).scrollTop() > 125 ) {
-            $('body').addClass('sticky');
+        if ( $(window).width() < 768 ) {
+            if ( $(window).scrollTop() > 1 ) {
+                $('body').addClass('sticky');
+            } else {
+                $('body').removeClass('sticky');
+            }            
         } else {
-            $('body').removeClass('sticky');
+            if ( $(window).scrollTop() > 125 ) {
+                $('body').addClass('sticky');
+            } else {
+                $('body').removeClass('sticky');
+            }
         }
+        
 
     })
 }

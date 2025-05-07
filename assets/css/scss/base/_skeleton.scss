@@ -44,6 +44,10 @@ header {
 
     .top-header {
 
+        @media screen and (max-width: 767px) {
+            padding: 12px !important;            
+        }
+
         .logo img {
             @media screen and (max-width: 640px) {
                 width: 157px;
@@ -113,6 +117,10 @@ header {
 
         &.active {
             top: -2rem;
+
+            @media screen and (max-width: 767px) {
+                top: -8px;                
+            }
 
             span {
 
@@ -211,7 +219,7 @@ footer {
             }
 
             li {
-                margin: 0 0 10px;
+                margin: 0 0 8px;
                 display: flex;
                 align-items: center;
 
@@ -301,7 +309,7 @@ footer {
             margin: 2rem 0 1.5rem;
 
             @media screen and (max-width: 767px) {
-                margin: 1rem 0 0;                
+                margin: 1rem 0 24px;                
             }
         }
 
